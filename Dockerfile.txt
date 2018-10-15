@@ -1,0 +1,6 @@
+FROM tomcat:8-jre8
+RUN sudo apt-get update
+COPY C:\Users\Durgesh Reddy\Desktop\kingsman\jenkins practise\jenkins1\game-of-life\gameoflife-web\target\gameoflife.war
+ usr\local\tomcat\gameoflife.war
+CMD ["ping","google.com"]
+EXPOSE 8080
